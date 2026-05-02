@@ -210,8 +210,8 @@ const Navbar = () => {
 
           {/* Desktop auth buttons */}
           <div className="desktop-auth" style={{ gap: "10px", alignItems: "center" }}>
-            <Link href="/signup" className="btn-outline">Sign Up</Link>
-            <Link href="/signin" className="btn-solid">Sign In</Link>
+            <Link href="/signup" className="btn-outline">Register</Link>
+            <Link href="/signin" className="btn-solid">Log In</Link>
           </div>
 
           {/* Hamburger button */}
@@ -264,7 +264,7 @@ const Navbar = () => {
                 onClick={() => setMenuOpen(false)}
                 style={{ textAlign: "center", padding: "10px 16px" }}
               >
-                Sign Up
+               Register
               </Link>
               <Link
                 href="/signin"
@@ -272,7 +272,7 @@ const Navbar = () => {
                 onClick={() => setMenuOpen(false)}
                 style={{ textAlign: "center", padding: "10px 16px" }}
               >
-                Sign In
+            Log In
               </Link>
             </div>
           </div>
