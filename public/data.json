@@ -65,17 +65,7 @@
     "image": "https://tse1.mm.bing.net/th/id/OIP.ACqD1hB7Zx6aKX5ayvQRBwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
     "category": "Clothing"
   },
-  {
-    "id": 7,
-    "name": "Travel Backpack",
-    "brand": "PackPro",
-    "price": 45,
-    "rating": 4.7,
-    "stock": 15,
-    "description": "Durable backpack for travel and beach trips.",
-    "image": "https://tse2.mm.bing.net/th/id/OIP.XEnPQIIh83u9P7wx3iSQlQHaLH?rs=1&pid=ImgDetMain&o=7&rm=3",
-    "category": "Bags"
-  },
+  { "id": 7, "name": "Travel Backpack", "brand": "PackPro", "price": 45, "rating": 4.7, "stock": 15, "description": "Durable backpack for travel and beach trips.", "image": "https://i.pinimg.com/originals/4e/73/23/4e7323154b6e8bcd81090689bd914c8c.jpg", "category": "Bags" },
   {
     "id": 8,
     "name": "Wireless Earbuds",

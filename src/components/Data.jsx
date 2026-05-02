@@ -8,15 +8,20 @@ const Data = async () => {
   });
 
   const products = await res.json();
-  const topProducts = products.slice(0, 8);
+  const topProducts = products.slice(0, 3);
 
   return (
-    <div className=" bg-yellow-200 p-6">
-    <h1 className="font-bold text-3xl text-center text-yellow-900"> Summer Products</h1>
-    <div>{topProducts.map(product => <ProductCard key={product.id} product={product}></ProductCard>)}
-</div>
+   <div className="bg-yellow-200 p-6">
+  <h1 className="font-bold text-3xl text-center text-yellow-900">
+   Popular Products
+  </h1>
 
-    </div>
+  <div className="grid grid-cols-1 lg:container lg:mx-auto sm:grid-cols-2 lg:grid-cols-3 gap-5 m-5">
+    {topProducts.map((product) => (
+      <ProductCard key={product.id} product={product} />
+    ))}
+  </div>
+</div>
   );
 };
 
