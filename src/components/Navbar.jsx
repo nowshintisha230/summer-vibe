@@ -43,7 +43,7 @@ const SummerVibeLogo = () => (
 
 const NAV_LINKS = [
   { label: "Home",       href: "/" },
-  { label: "Products",  href: "/all-photos" },
+  { label: " All Products",  href: "/all-products" },
   { label: "My Profile", href: "/profile" },
 ];
 

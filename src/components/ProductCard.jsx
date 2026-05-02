@@ -1,5 +1,6 @@
 import { Card } from "@heroui/react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const ProductCard = ({ product }) => {
@@ -52,10 +53,11 @@ const ProductCard = ({ product }) => {
           <p className="text-lg font-bold text-green-600">
             ${product.price}
           </p>
-
+<Link href={"/ProductDetails"}>
           <button className="rounded-xl bg-black px-4 py-2 text-sm text-white transition hover:bg-gray-800">
-            Add to Cart
+         View Details
           </button>
+          </Link>
         </div>
 
       </div>
