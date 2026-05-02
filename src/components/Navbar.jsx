@@ -1,7 +1,9 @@
 "use client";
+import { Avatar } from '@heroui/react';
 import { useState } from "react";
 import { Button } from "@heroui/react";
 import Link from "next/link";
+import { authClient } from "@/lib/auth-client";
 
 const SummerVibeLogo = () => (
   <svg width="52" height="52" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -48,6 +50,13 @@ const NAV_LINKS = [
 ];
 
 const Navbar = () => {
+  const userData =authClient.useSession()
+ const user=userData.data?.user
+ 
+const handleSignOut =async ()=>{
+  await authClient.signOut();
+}
+
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -208,12 +217,27 @@ const Navbar = () => {
             ))}
           </ul>
 
-          {/* Desktop auth buttons */}
-          <div className="desktop-auth" style={{ gap: "10px", alignItems: "center" }}>
+          
+      <div>
+      {!user && <div className="desktop-auth" style={{ gap: "10px", alignItems: "center" }}>
             <Link href="/signup" className="btn-outline">Register</Link>
             <Link href="/signin" className="btn-solid">Log In</Link>
+            </div>}
+            {
+              user && <div className='flex gap-3 justify-between'>
+              <Avatar>
+              <Avatar.Image
+                      alt="@example"
+                      src={user?.image}
+                      referrerPolicy='no-referrer'
+                    />
+                     <Avatar.Fallback>{user?.name[0]}</Avatar.Fallback> 
+                     </Avatar>
+                     <Button onClick={handleSignOut} variant='danger'>Log Out</Button>
+                    </div>
+            }
           </div>
-
+        
           {/* Hamburger button */}
           <button
             className="hamburger-btn"
@@ -257,24 +281,13 @@ const Navbar = () => {
               ))}
             </ul>
 
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <Link
-                href="/signup"
-                className="btn-outline"
-                onClick={() => setMenuOpen(false)}
-                style={{ textAlign: "center", padding: "10px 16px" }}
-              >
-               Register
-              </Link>
-              <Link
-                href="/signin"
-                className="btn-solid"
-                onClick={() => setMenuOpen(false)}
-                style={{ textAlign: "center", padding: "10px 16px" }}
-              >
-            Log In
-              </Link>
-            </div>
+             <div>
+      {!user && <div className="desktop-auth" style={{ gap: "10px", alignItems: "center" }}>
+            <Link href="/signup" className="btn-outline">Register</Link>
+            <Link href="/signin" className="btn-solid">Log In</Link>
+            </div>}
+            
+          </div>
           </div>
         )}
 
