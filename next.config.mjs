@@ -3,14 +3,9 @@ const nextConfig = {
 
   images: {
     remotePatterns: [
-      
       {
         protocol: "https",
-        hostname: "i.pinimg.com",
-      },
-      {
-        protocol: "https",
-        hostname: "tse1.mm.bing.net",
+        hostname: "**",
       },
     ],
   },
