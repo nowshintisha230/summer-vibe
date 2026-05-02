@@ -53,7 +53,7 @@ const ProductCard = ({ product }) => {
           <p className="text-lg font-bold text-green-600">
             ${product.price}
           </p>
-<Link href={"/ProductDetails"}>
+<Link href={`/all-products/${product.id}`}>
           <button className="rounded-xl bg-black px-4 py-2 text-sm text-white transition hover:bg-gray-800">
          View Details
           </button>
