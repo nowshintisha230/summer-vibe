@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "UV Protection Sunglasses",
+    "brand": "SunShade",
+    "price": 15,
+    "rating": 4.7,
+    "stock": 10,
+    "description": "Stylish UV protection sunglasses perfect for summer outings.",
+    "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80",
+    "category": "Accessories"
+  },
+  {
+    "id": 2,
+    "name": "Summer Beach Hat",
+    "brand": "BeachVibe",
+    "price": 12,
+    "rating": 4.5,
+    "stock": 25,
+    "description": "Lightweight straw hat perfect for sunny beach days.",
+    "image": "https://images.unsplash.com/photo-1520975928316-5f7f0c9a6c2b?auto=format&fit=crop&w=800&q=80",
+    "category": "Accessories"
+  },
+  {
+    "id": 3,
+    "name": "Cool Summer T-Shirt",
+    "brand": "AirWear",
+    "price": 20,
+    "rating": 4.6,
+    "stock": 30,
+    "description": "Breathable cotton t-shirt for hot summer weather.",
+    "image": "https://images.unsplash.com/photo-1520975682031-ae8b0a1c6a4c?auto=format&fit=crop&w=800&q=80",
+    "category": "Clothing"
+  },
+  {
+    "id": 4,
+    "name": "Beach Flip Flops",
+    "brand": "SeaStep",
+    "price": 10,
+    "rating": 4.4,
+    "stock": 50,
+    "description": "Comfortable flip flops for beach and daily use.",
+    "image": "https://images.unsplash.com/photo-1580906853203-f7d7b3f8c3c2?auto=format&fit=crop&w=800&q=80",
+    "category": "Footwear"
+  },
+  {
+    "id": 5,
+    "name": "Portable Water Bottle",
+    "brand": "HydraGo",
+    "price": 8,
+    "rating": 4.8,
+    "stock": 60,
+    "description": "Keep yourself hydrated during hot summer days.",
+    "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=800&q=80",
+    "category": "Accessories"
+  },
+  {
+    "id": 6,
+    "name": "Wireless Earbuds",
+    "brand": "SoundX",
+    "price": 35,
+    "rating": 4.6,
+    "stock": 20,
+    "description": "High-quality wireless earbuds for music lovers.",
+    "image": "https://images.unsplash.com/photo-1585386959984-a41552231693?auto=format&fit=crop&w=800&q=80",
+    "category": "Electronics"
+  },
+  {
+    "id": 7,
+    "name": "Beach Shorts",
+    "brand": "WaveWear",
+    "price": 18,
+    "rating": 4.5,
+    "stock": 40,
+    "description": "Light and comfortable shorts for summer beach trips.",
+    "image": "https://images.unsplash.com/photo-1593032465175-481ac7f401a0?auto=format&fit=crop&w=800&q=80",
+    "category": "Clothing"
+  },
+  {
+    "id": 8,
+    "name": "Travel Backpack",
+    "brand": "PackPro",
+    "price": 45,
+    "rating": 4.7,
+    "stock": 15,
+    "description": "Durable backpack for travel and daily use.",
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+    "category": "Bags"
+  },
+  {
+    "id": 9,
+    "name": "Sunscreen Lotion SPF 50",
+    "brand": "SkinGuard",
+    "price": 14,
+    "rating": 4.9,
+    "stock": 70,
+    "description": "Strong SPF protection for summer skin care.",
+    "image": "https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=800&q=80",
+    "category": "Beauty"
+  },
+  {
+    "id": 10,
+    "name": "Summer Sunglasses Premium",
+    "brand": "LuxShade",
+    "price": 25,
+    "rating": 4.8,
+    "stock": 18,
+    "description": "Premium stylish sunglasses with UV protection.",
+    "image": "https://images.unsplash.com/photo-1508296695146-257a814070b4?auto=format&fit=crop&w=800&q=80",
+    "category": "Accessories"
+  }
+]
