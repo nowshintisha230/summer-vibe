@@ -1,28 +1,38 @@
-🌴 Summer Vibe
-📌 Project Purpose
+# 🌴 Summer Vibe
 
-Summer Vibe is a modern web application designed to showcase and explore summer-related products like sunglasses, beach accessories, skincare items, and more. The goal is to provide users with a visually appealing and smooth shopping-like experience.
+## 📌 Project Purpose
+Summer Vibe is a modern web application built to showcase and explore summer-related products such as sunglasses, beach accessories, skincare items, and more. The goal is to provide users with a smooth, fast, and visually appealing shopping-like experience using modern web technologies.
 
-🚀 Live URL
+---
 
+## 🚀 Live URL
 https://summer-vibe.vercel.app
 
-✨ Key Features
+---
 
-✔️ Product Listing Page – Responsive grid layoutে সব summer products দেখানো হয়
-✔️ Product Details Page – প্রতিটি product-এর বিস্তারিত তথ্য আলাদা page-এ দেখা যায়
-✔️ User Profile System – user নিজের profile view এবং update করতে পারে
-✔️ Fast Performance – Next.js দিয়ে optimized এবং fast experience
-✔️ Fully Responsive Design – mobile, tablet, desktop সব device support করে
-✔️ Modern UI Design – Tailwind CSS দিয়ে clean ও attractive UI
-✔️ Dynamic Routing – প্রতিটি product-এর জন্য আলাদা dynamic page
-✔️ Optimized Images – Next.js Image component দিয়ে performance improve করা হয়েছে
+## ✨ Key Features
 
-📦 NPM Packages Used
+- ✔️ Product Listing Page – Displays all summer products in a responsive grid layout  
+- ✔️ Product Details Page – Each product has its own detailed page with full information  
+- ✔️ User Profile System – Users can view and update their profile information  
+- ✔️ Fast Performance – Built with Next.js for optimized speed and performance  
+- ✔️ Fully Responsive Design – Works smoothly on mobile, tablet, and desktop devices  
+- ✔️ Modern UI Design – Clean and attractive interface using Tailwind CSS  
+- ✔️ Dynamic Routing – Each product has its own dynamic route  
+- ✔️ Optimized Images – Uses Next.js Image component for better performance  
 
-✔️ next – React framework for production
-✔️ react – UI library
-✔️ react-dom – DOM rendering
-✔️ tailwindcss – Utility-first CSS framework
-✔️ @heroui/react – UI component library
-✔️ lucide-react – Icon library
+---
+
+## 📦 NPM Packages Used
+
+- next – React framework for production  
+- react – UI library  
+- react-dom – DOM rendering  
+- tailwindcss – Utility-first CSS framework  
+- @heroui/react – UI component library  
+- lucide-react – Icon library  
+
+---
+
+## 👩‍💻 Author
+**Nafisa Nowshin Tisha**
