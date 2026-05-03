@@ -4,6 +4,7 @@ import { FcGoogle } from "react-icons/fc";
 import { Check } from "@gravity-ui/icons";
 import { useRouter } from "next/navigation";
 import toast, { Toaster } from "react-hot-toast";
+import Link from "next/link";
 import {
   Button,
   Card,
@@ -42,14 +43,21 @@ export default function SignINPage() {
   };
 
   const handleGoogleSignIn = async () => {
-    await authClient.signIn.social({
+    const { error } = await authClient.signIn.social({
       provider: "google",
+      callbackURL: "/home",
     });
+
+    if (error) {
+      toast.error(error.message || "Google login failed");
+      return;
+    }
+
+    toast.success("Google login successful!");
   };
 
   return (
     <>
-      {/* Toast container (VERY IMPORTANT) */}
       <Toaster position="top-right" />
 
       <Card className="border mx-auto w-125 py-10 mt-5">
@@ -109,8 +117,17 @@ export default function SignINPage() {
           </div>
         </Form>
 
+        {/* Register Link */}
+        <p className="text-center mt-3">
+          Don’t have an account?{" "}
+          <Link href="/register" className="text-blue-500 underline">
+            Register
+          </Link>
+        </p>
+
         <p className="text-center">Or</p>
 
+        {/* Google Login */}
         <div className="flex justify-center items-center">
           <Button onClick={handleGoogleSignIn} className="bg-black">
             <FcGoogle size={20} /> Sign in with Google
