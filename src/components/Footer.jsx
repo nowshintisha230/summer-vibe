@@ -43,9 +43,14 @@ export default function Footer() {
         {/* Privacy Policy */}
         <div>
           <h2 className="text-white text-lg font-semibold mb-4">Legal</h2>
+
           <Link href="/privacy-policy" className="text-sm hover:text-white">
             Privacy Policy
           </Link>
+
+          <p className="text-xs mt-2 text-gray-400">
+            We respect your privacy. Your data is not shared with third parties and is used only to improve your experience on our platform.
+          </p>
         </div>
 
       </div>
