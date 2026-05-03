@@ -120,7 +120,7 @@ export default function SignINPage() {
         {/* Register Link */}
         <p className="text-center mt-3">
           Don’t have an account?{" "}
-          <Link href="/register" className="text-blue-500 underline">
+          <Link href="/signup" className="text-blue-500 underline">
             Register
           </Link>
         </p>
