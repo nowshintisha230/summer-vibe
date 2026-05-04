@@ -14,11 +14,9 @@ import {
 } from "@heroui/react";
 import { useRouter } from "next/navigation";
 
-
 export default function SignUpPage() {
 
  const  router = useRouter()
-
 
   const onSubmit = async (e) => {
     e.preventDefault();
@@ -27,32 +25,28 @@ export default function SignUpPage() {
     const email=e.target.email.value;
     const password=e.target.password.value;
    
-
-    const {data,error}=await authClient.signUp.email({name,email,password,image,
-    })
-
+    const {data,error}=await authClient.signUp.email({name,email,password,image})
 
     console.log({data,error})
 
-if(!error){
-    router.push('/')
-}
-
+    if(!error){
+        router.push('/')
+    }
   };
-const handleGoogleSignUp = async ()=>{
+
+  const handleGoogleSignUp = async ()=>{
     await authClient.signIn.social({
         provider:'google'
     })
-}
-
-
-
+  }
 
   return (
-    <Card className="border mx-auto w-125 py-10 mt-5">
+    // FIXED HERE
+    <Card className="border mx-auto w-full max-w-md py-10 mt-5 px-4">
       <h1 className="text-center text-2xl font-bold">Sign Up</h1>
 
-      <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
+      {/* FIXED HERE */}
+      <Form className="flex w-full flex-col gap-4" onSubmit={onSubmit}>
         <TextField isRequired name="name" type="text">
           <Label>Name</Label>
           <Input placeholder="Enter your name" />
@@ -73,7 +67,6 @@ const handleGoogleSignUp = async ()=>{
             if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(value)) {
               return "Please enter a valid email address";
             }
-
             return null;
           }}
         >
@@ -97,7 +90,6 @@ const handleGoogleSignUp = async ()=>{
             if (!/[0-9]/.test(value)) {
               return "Password must contain at least one number";
             }
-
             return null;
           }}
         >
@@ -119,10 +111,14 @@ const handleGoogleSignUp = async ()=>{
           </Button>
         </div>
       </Form>
-     <p className="text-center">Or</p>
-           <div className="flex justify-center items-center">
-           <Button onClick={handleGoogleSignUp} className="bg-black"> <FcGoogle size={20} />  Sign Up with Google</Button>
-           </div>
+
+      <p className="text-center">Or</p>
+
+      <div className="flex justify-center items-center">
+        <Button onClick={handleGoogleSignUp} className="bg-black">
+          <FcGoogle size={20} /> Sign Up with Google
+        </Button>
+      </div>
     </Card>
   );
 }
