@@ -60,10 +60,12 @@ export default function SignINPage() {
     <>
       <Toaster position="top-right" />
 
-      <Card className="border mx-auto w-125 py-10 mt-5">
+      {/* FIXED HERE */}
+      <Card className="border mx-auto w-full max-w-md py-10 mt-5 px-4">
         <h1 className="text-center text-2xl font-bold">Sign In</h1>
 
-        <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
+        {/* FIXED HERE */}
+        <Form className="flex w-full flex-col gap-4" onSubmit={onSubmit}>
           <TextField
             isRequired
             name="email"
@@ -117,7 +119,6 @@ export default function SignINPage() {
           </div>
         </Form>
 
-        {/* Register Link */}
         <p className="text-center mt-3">
           Don’t have an account?{" "}
           <Link href="/signup" className="text-blue-500 underline">
@@ -127,7 +128,6 @@ export default function SignINPage() {
 
         <p className="text-center">Or</p>
 
-        {/* Google Login */}
         <div className="flex justify-center items-center">
           <Button onClick={handleGoogleSignIn} className="bg-black">
             <FcGoogle size={20} /> Sign in with Google
